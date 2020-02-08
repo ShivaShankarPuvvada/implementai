@@ -33,7 +33,7 @@ SECRET_KEY = 'nly@p01&3*x471e**9)8y8x*9305j5tea_+=9x@w!%k*y%j6uj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['implementai.herokuapp.com']
+ALLOWED_HOSTS = ['legendables.herokuapp.com']
 
 
 # Application definition
