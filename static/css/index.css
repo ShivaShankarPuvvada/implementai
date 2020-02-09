@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+h1, h2, h3,h4, h5, h6, p {
+
+	margin-bottom: 20px;
+}
+
+.sect {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.subSect {
+	height: 50%;
+	background-color: white;
+}
+
+.sectOne{
+	background-image: url("/static/img/about1.png"); 
+}
+
+.sectTwo{
+	background-image: url("/static/img/about2.png");
+}	
+
+.sectThree{
+	background-image: url("/static/img/about3.png");
+}
+
+.partOne{
+	background-image: url("/static/img/clipart1.png");
+	background-repeat: no-repeat;
+
+}
+
+.partTwo{
+	background-image: url("static/img/clipart2.png");
+	background-repeat: no-repeat;
+}
+
+.partOne p {
+	height: 100%;
+	width: 50%;
+	background: white;
+	margin-left: auto;
+	padding: 120px 70px;
+	font-size: 130%;
+	text-align: justify;
+}
+
+.partTwo p {
+	height: 100%;
+	width: 50%;
+	background: white;
+	margin-left: auto;
+	padding: 170px 70px;
+	font-size: 130%;
+	text-align: justify;
+}

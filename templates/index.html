@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    hi
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+{% block local_stylesheet  %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+{% block main_content %}
+
+    <div class = "sect sectOne"><div class="position-fixed mr-5 mt-5" style="right: 0;"><a href="https://github.com/shivaShankarPuvvada"><img src="{% static 'img/github.png' %}" alt="github logo" height="50"></a></div></div>
+    <div class = "subSect partOne"><p>The elephants trunk is a fusion of its nose and upper lip. It is the elephants most important limb. The trunk is sensitive enough to pick up a blade of grass and strong enough to rip the branches off a tree. The trunk is also used for drinking; the elephant can suck up to 14 litres of water at a time and then blow it straight into its mouth! When bathing, the elephant sucks water to spray on its body. It will then spray dirt and mud on its wet coat, which will dry and act as sunscreen.</p></div>
+    <div class = "sect sectTwo"></div>
+    <div class = "subSect partTwo"><p>The elephants gestation period is 22 months longer than any other land animal in the world. A new born human baby weighs an average of 7 pounds while a new born elephant baby can weigh up to 260 pounds! The baby can stand up shortly after being born.</p></div>	
+    <div class = "sect sectThree"></div>
+
+{% endblock %}
