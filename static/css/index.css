@@ -18,11 +18,6 @@ h1, h2, h3,h4, h5, h6, p {
 	background-attachment: fixed;
 }
 
-.subSect {
-	height: 50%;
-	background-color: white;
-}
-
 .sectOne{
 	background-image: url("/static/img/about1.png"); 
 }
@@ -38,19 +33,21 @@ h1, h2, h3,h4, h5, h6, p {
 .partOne{
 	background-image: url("/static/img/clipart1.png");
 	background-repeat: no-repeat;
-
+	background-color: #303028;
 }
 
 .partTwo{
 	background-image: url("static/img/clipart2.png");
 	background-repeat: no-repeat;
+	background-color: #303028;
 }
 
 .partOne p {
 	height: 100%;
 	width: 50%;
-	background: white;
+	color: #b7c38c;
 	margin-left: auto;
+	margin-bottom: 0px;
 	padding: 120px 70px;
 	font-size: 130%;
 	text-align: justify;
@@ -59,8 +56,9 @@ h1, h2, h3,h4, h5, h6, p {
 .partTwo p {
 	height: 100%;
 	width: 50%;
-	background: white;
+	color: #b7c38c;
 	margin-left: auto;
+	margin-bottom: 0px;
 	padding: 170px 70px;
 	font-size: 130%;
 	text-align: justify;
