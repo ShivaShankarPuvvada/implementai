@@ -6,7 +6,7 @@ from rest_framework.test import APIRequestFactory
 factory = APIRequestFactory()
 
 
-request = factory.post('/racks/', {'title': 'R33'})
+request = factory.post('/racks/', {'title': 'R15'})
 request = factory.put('/racks/12/', {'title': 'R11'})
 
 
