@@ -44,10 +44,7 @@ h1, h2, h3,h4, h5, h6, p {
 
 .partOne p {
 	height: 100%;
-	width: 50%;
 	color: #b7c38c;
-	margin-left: auto;
-	margin-bottom: 0px;
 	padding: 120px 70px;
 	font-size: 130%;
 	text-align: justify;
@@ -55,11 +52,20 @@ h1, h2, h3,h4, h5, h6, p {
 
 .partTwo p {
 	height: 100%;
-	width: 50%;
 	color: #b7c38c;
-	margin-left: auto;
-	margin-bottom: 0px;
-	padding: 170px 70px;
+	padding: 120px 70px;
 	font-size: 130%;
 	text-align: justify;
+}
+
+.pythons {
+	height: 200px;
+	margin-top: 99px;
+	margin-left: 185px;
+}
+
+.markets {
+	height: 245px;
+	margin-top: 64px;
+	margin-left: 179px;
 }

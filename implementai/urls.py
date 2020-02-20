@@ -25,8 +25,8 @@ router.register(r'racks', views.RackViewSet)
 router.register(r'students', views.StudentViewSet)
 
 urlpatterns = [
-    # path('', i_views.index, name='index'),
-    path('', include(router.urls)),
+    path('', i_views.index, name='index'),
+    path('rest/', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
 
