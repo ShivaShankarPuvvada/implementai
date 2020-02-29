@@ -1,6 +1,5 @@
 from django.contrib import admin
-from rest.models import Rack, Student
+from rest.models import Job
 
 # Register your models here.
-admin.site.register(Rack)
-admin.site.register(Student)
+admin.site.register(Job)

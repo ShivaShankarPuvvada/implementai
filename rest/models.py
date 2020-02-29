@@ -1,21 +1,16 @@
 from django.db import models
+# from django.conf import settings
+from django.contrib.auth import get_user_model
+
+
 
 # Create your models here.
-class Rack(models.Model):
+class Job(models.Model):
     title = models.CharField(max_length=30)
+    posted_by = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
 
     class Meta:
         ordering = ['title']
 
     def __str__(self):
         return self.title
-
-class Student(models.Model):
-    name = models.CharField(max_length=100)
-    rack = models.ManyToManyField('Rack', blank=True, related_name='students')
-
-    class Meta:
-        ordering = ['name']
-
-    def __str__(self):
-        return self.name
