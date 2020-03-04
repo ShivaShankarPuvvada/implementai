@@ -11,7 +11,7 @@ from rest_framework.response import Response
 
 from rest.serializers import JobSerializer
 
-from permissions import IsOwnerOrReadOnly
+from rest.permissions import IsOwnerOrReadOnly
 
 class JobViewSet(viewsets.ModelViewSet):
     """
@@ -23,8 +23,3 @@ class JobViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(posted_by=self.request.user)
-
-
-
-
-

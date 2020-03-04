@@ -6,8 +6,6 @@ from django.contrib.auth import get_user_model
 
 # Create your models here.
 
-class Skill(models.Model):
-    name = models.CharField(max_length=20)
 
 class Job(models.Model):
 
@@ -21,7 +19,7 @@ class Job(models.Model):
     title = models.CharField(max_length=255)
     posted_by = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     description = models.TextField(blank=True, null=True)
-    skills = models.ForeignKey('Skill', on_delete=models.CASCADE)
+    skills = models.CharField(max_length=244, blank=True, null=True)
     experience_from = models.CharField(max_length=2, default='00')
     experience_to = models.CharField(max_length=2, default='00')
     educational_qualification = models.CharField(max_length=25, blank=True, null=True)
