@@ -1,18 +1,37 @@
 from django.test import TestCase
-from rest.models import Rack, Student
+from rest.models import Job
 
 from rest_framework.test import APIRequestFactory
+from rest_framework.test import force_authenticate
+
+
+from django.contrib.auth.models import User
+
 
 factory = APIRequestFactory()
 
 
-request = factory.post('/racks/', {'title': 'R15'})
-request = factory.put('/racks/12/', {'title': 'R11'})
+request = factory.get('/jobs/')
 
 
-request = factory.post('/students/', {'name': 'S6'})
+user = User.objects.get(username='testuser')
+view = AccountDetail.as_view()
 
-# testing manytomanyfield
-racks = ['R1', 'R2', 'R3']
-request = factory.put('/students/4/', {'name': 'S10', 'rack': racks})
+
+
+request1 = factory.post('/jobs/', {'title': 'Full stack developer'})
+force_authenticate(request1, user=user, token=user.auth_token)
+response = view(request1)
+
+
+request2 = factory.put('/jobs/1/', {'title': 'Angular 1 js developer'})
+force_authenticate(request2, user=user, token=user.auth_token)
+response = view(request2)
+
+
+request3 = factory.delete('/jobs/1/')
+force_authenticate(request3, user=user, token=user.auth_token)
+response = view(request3)
+
+
 
